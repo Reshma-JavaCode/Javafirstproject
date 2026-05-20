@@ -8,13 +8,16 @@ class B{
 }
 
 public class GarbaeCollection1 {
-	@Override
-	protected void finalize()
-	{
-		System.out.println("Finalize method loaded");
-
-	}
-
+//	@Override
+//	protected void finalize()
+//	{
+//		System.out.println("Finalize method loaded");
+//
+//	}
+@Override
+protected void finalize() throws Throwable {
+	System.out.println("garbage collector called");
+}
 	/*
 	*4 void method1()
 	{
@@ -64,16 +67,17 @@ public class GarbaeCollection1 {
 		
 		obj1=null;
 		obj2=null;
+		new A();
 		System.gc();
 		
+//		System.out.println(obj1);// null
+//		System.out.println(obj2);//null
 		
-		System.out.println(obj1);// @5ca881b5
-		System.out.println(obj2);
 		System.out.println(g1);// @5ca881b5
 		System.out.println(g2);// @5ca881b5
 		System.out.println(g3); // @24d46ca6
 		System.out.println("main method ended");
-		  
+		System.gc();  
 	}
 
 }
