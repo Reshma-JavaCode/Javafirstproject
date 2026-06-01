@@ -13,7 +13,7 @@ public class ShoppingCart {
 			
 		}
 		public ShoppingCart(int n) {
-			//super();
+			
 			//loop to find each product price
 			for(int i=1;i<=n;i++)
 			{
