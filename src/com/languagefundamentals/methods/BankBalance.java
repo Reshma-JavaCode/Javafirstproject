@@ -10,9 +10,13 @@ public class BankBalance {
 	static Scanner sc=new Scanner(System.in);
 	
 	void withDraw(double d) {
-		
+		if(d>0 && d<=balance)
+		{
 		balance = balance-d;
 		System.out.println("Total balance is: "+balance);
+		}
+		else
+			System.out.println("Insufficient Balance");
 	}
 	
 	void deposit(double d) {

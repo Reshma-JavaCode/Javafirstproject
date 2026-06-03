@@ -29,6 +29,7 @@ public class FactoryMethod {
 	}
 	
 	public static void main(String[] args) {
+		
 		Employee1 emp=getEmpInfo();
 		System.out.println("employee id: "+emp.eid);
 		System.out.println("employee name: "+emp.ename);

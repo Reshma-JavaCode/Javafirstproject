@@ -27,7 +27,7 @@ public class Movie {
 		//m3,m4 pointing to same adress
 		//Changes affect both variables
 		//Used when you want another variable to access the same object
-		Movie m4=m3; // copies only the reference
+		Movie m4=m3; // **copies only the reference
 		m4.disp();
 	}
 

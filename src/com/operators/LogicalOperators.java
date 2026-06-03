@@ -14,6 +14,8 @@ public class LogicalOperators {
 		System.out.println(false&&true);
 		System.out.println(false&&false);
 		
+		
+		//Logical OP works only with conditions
 		System.out.println((a<b)&&(b==c));
 		System.out.println((a>b)&&(b==c));
 		System.out.println((a<b)&&(b>c));
