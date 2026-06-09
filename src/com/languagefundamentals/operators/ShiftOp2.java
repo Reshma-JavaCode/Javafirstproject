@@ -1,4 +1,4 @@
-package com.operators;
+package com.languagefundamentals.operators;
 
 //WAP to apply shift operators
 public class ShiftOp2 {
