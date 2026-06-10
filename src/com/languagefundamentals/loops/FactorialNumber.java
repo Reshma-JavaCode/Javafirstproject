@@ -10,6 +10,7 @@ public class FactorialNumber {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter a number to find factorials of a numbers: ");
 		n= sc.nextInt();
+		
 		for(int i=1;i<=n;i++)
 		{
 				fact=fact*i;
