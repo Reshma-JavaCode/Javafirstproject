@@ -15,8 +15,11 @@ public class PrimeNumbers {
 				if(n%i==0)
 				{
 					count++;
+					
 				}
 			}
+			
+			System.out.println();
 			if(count==2)
 			{
 				
