@@ -8,19 +8,17 @@ import java.util.Scanner;
 //9² = 81
 //8 + 1 = 9
 //Therefore, 9 is a Neon Number.
-public class NeonNumber {
-
-	
+public class NeonNumber {	
 	static boolean isNeon(int n)
 	{
 		boolean status=false;
 		int rem=0,sum=0;
 		int temp=n*n;//81
 		int temp2=temp;//81
+		
 		while(temp>0)//81 8
 		{
 			rem= temp%10;//1 8
-			
 			sum=sum+rem;//1 1+8=9
 			temp=temp/10;//8 0
 		}
@@ -40,5 +38,4 @@ public class NeonNumber {
 			System.out.println(n+" is not Neon Number");
 		sc.close();
 	}
-
 }

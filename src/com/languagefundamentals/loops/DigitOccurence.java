@@ -14,11 +14,12 @@ public class DigitOccurence {
 		while(n>0)
 		{
 			rem=n%10;
-			n=n/10;
+			
 			if(rem==d)
 			{
 				count++;
 			}
+			n=n/10;
 		}
 		//System.out.println(count);
 		return count;
