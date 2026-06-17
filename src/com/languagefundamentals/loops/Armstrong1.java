@@ -8,18 +8,20 @@ import java.util.Scanner;
 ///ex:1=1^1=1 ,153,370,371,1634
 public class Armstrong1 {
 
+	//To find digits in a given number
 	static int findDigits(int n)
 	{
 		int rem=0,count=0;
 		while(n>0)
 		{
-			//rem=n%10;
-			n=n/10;
 			count++;
+			n=n/10;
 		}
 		System.out.println(count);
 		return count;
 	}
+	
+	//Armstrong Logic
 	static boolean isArmstrong(int n)
 	{
 		int rem=0,sum=0,temp=n;
@@ -41,10 +43,10 @@ public class Armstrong1 {
 	
 	public static void main(String[] args) {
 
-		int n;//153
+		int n;
 		Scanner sc= new Scanner(System.in);
 		System.out.println("enter a Number");
-		n=sc.nextInt();
+		n=sc.nextInt();//153
 		if(isArmstrong(n))
 			System.out.println(n+" is Armstrong number");
 		else

@@ -8,6 +8,18 @@ import java.util.Scanner;
 ///ex:1=1^1=1 ,153,370,371,1634
 public class ArmstrongNumbers {
 
+	static int findDigits(int n)
+	{
+		int count=0;
+		while(n>0)
+		{
+			count++;
+			n=n/10;
+		}
+		//System.out.println(count);
+		return count;
+	}
+	
 	static boolean isArmstrong(int n)
 	{
 		boolean status=false;
@@ -16,7 +28,8 @@ public class ArmstrongNumbers {
 		//converting n into string to find digits in n by using length() method
 		//153length=3
 		//calling method with other method : Method chaining
-		int digit=Integer.toString(n).length();
+		//int digit=Integer.toString(n).length(); //shortcut to find digits in a number
+		int digit=findDigits(n);
 		while(n>0)
 		{
 			rem= n%10;
@@ -32,8 +45,10 @@ public class ArmstrongNumbers {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("enter a Range");
 		range=sc.nextInt();
+		
 		for(int i=1;i<=range;i++)
 		{
+			//int digit=findDigits(i);
 			if(isArmstrong(i))
 			{
 				System.out.print(i+" ");
@@ -43,3 +58,7 @@ public class ArmstrongNumbers {
 	}
 
 }
+//output:-
+//enter a Range
+//1000
+//1 2 3 4 5 6 7 8 9 153 370 371 407 
