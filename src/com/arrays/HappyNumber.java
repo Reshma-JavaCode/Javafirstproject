@@ -2,6 +2,14 @@ package com.arrays;
 
 import java.util.Scanner;
 
+//WAP to find wether the given number is happy number or not
+//ex:19 
+//=1² + 9²=82
+//8² + 2²= 64 + 4= 68
+//6² + 8²= 36 + 64= 100
+//1² + 0² + 0²= 1
+//n==1 so,19 is happy number
+
 public class HappyNumber {
 	static void happyNumber(int n) // 19
 	{
