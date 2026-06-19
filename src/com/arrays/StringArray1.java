@@ -1,5 +1,5 @@
 package com.arrays;
-
+//All datatype elements with array
 public class StringArray1 {
 
 	public static void main(String[] args) {	
