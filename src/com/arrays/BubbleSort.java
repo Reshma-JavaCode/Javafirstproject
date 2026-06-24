@@ -1,6 +1,7 @@
 package com.arrays;
 
 //Bubble Sort
+//Repeatedly compare adjacent elements and swap if they are in the wrong order.
 //comparing with all its adjusent elements from array 
 //and swap them if they r in wrong order
 //sorting happens from end like:
@@ -60,7 +61,7 @@ public class BubbleSort {
 			System.out.print(i+" ");		
 		}
 		
-
+		//o/p: 1 2 3 4
 	}
 
 }

@@ -2,6 +2,7 @@ package com.arrays;
 
 public class SelectionSort {
 //Selection sort
+// Repeatedly select the smallest element from the unsorted portion and place it at the correct position.
 	//finds smallest ele fron unsorted part of array
 	//and place it as its correct position
 	//smallest ele places 1st to its position i.e,
