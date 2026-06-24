@@ -3,15 +3,16 @@ package com.arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-////Q)WAP TO do rationa of array acc. to the given rotation numbers.
+////Q)WAP TO do rationa of array acc to the given rotation numbers.
 
-//array values are :8 so rotation number in between only->
-//0 to 8 rotations is correct
+//array values are :8 so rotation number in between only-> 0 to 8 rotations is correct
 //if exceed it gives java.lang.ArrayIndexOutOfBoundsException
-//so, write if condition r in range then only do rotation
-//else, display error msg
+//so, to do rotation even r>8
+//r= r % a.length;---> if 3 r= 3%8 ==3
+//if r=9 it exceed range 
+//so, 9%8 given 1 so, 1 rotation gng to happens...
 
-public class RotationalArray {
+public class RotationalArray2 {
 
 	// reversing logic
 	static void reverseOrder(int[] a, int s, int e) {
@@ -26,7 +27,7 @@ public class RotationalArray {
 
 	static void rotationalArray(int a[], int r) {
 		int start = 0, end = a.length - 1;
-		// r= r % a.length;
+		r = r % a.length;
 
 		// Total array reversing
 		// output: [8,7,6,5,4,3,2,1]
@@ -59,15 +60,13 @@ public class RotationalArray {
 		System.out.println("How many times do you want to rotate?...");
 		int r = sc.nextInt();// 5
 
-		if (r < a.length) {
-			rotationalArray(a, r);
-			System.out.println("\nAfter " + r + " rotations array values are:");
-		} else {
-			System.out.println("Given array value is out of range");
-		}
+		rotationalArray(a, r);
+
+		System.out.println("\nAfter " + r + " rotations array values are:");
 
 		System.out.println(Arrays.toString(a));
 		sc.close();
+
 	}
 
 }
