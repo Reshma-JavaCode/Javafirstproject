@@ -15,17 +15,19 @@ public class ButterflyPattern {
 		//Upper part 
 		for(int i=1;i<=n;i++)
 		{
-			
+			//stars
 			for(int j=1;j<=i;j++)
 			{
 				System.out.print("*");
 			}
 			
+			//spaces
 			for(int k=1;k<=2*(n-i);k++)
 			{
 				System.out.print(" ");
 			}
 			
+			//stars
 			for(int l=1;l<=i;l++)
 			{
 				System.out.print("*");
@@ -37,16 +39,19 @@ public class ButterflyPattern {
 		//Lower part
 		for(int i=1;i<=n-1;i++)
 		{
+			//stars
 			for(int j=n-1;j>=i;j--)
 			{
 				System.out.print("*");
 			}
 			
+			//spaces
 			for (int j = 1; j <= 2 * i; j++) 
 			{
 				System.out.print(" ");
 			}
 			
+			//stars
 			for(int j=n-1;j>=i;j--)
 			{
 				System.out.print("*");
