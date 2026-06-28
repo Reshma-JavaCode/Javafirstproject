@@ -75,7 +75,9 @@ public class TicTacToe {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
+		String s=" ";
 
+		do {
 		char[][] board = new char[3][3];
 		char player = 'x';
 
@@ -84,6 +86,8 @@ public class TicTacToe {
 				board[i][j] = ' ';
 			}
 		}
+		
+		//to display grid
 		printBoard(board);
 
 		while (true) {
@@ -105,13 +109,17 @@ public class TicTacToe {
 			}
 
 			board[row][col] = player;
+			
+			System.out.println();
 			printBoard(board);
 
+			System.out.println();
 			if (checkWinner(board, player)) {
 				System.out.println("Player " + player + " won the game!");
 				break;
 			}
 
+			System.out.println();
 			if (isBoardFull(board)) {
 				System.out.println("Draw the game");
 				break;
@@ -120,7 +128,11 @@ public class TicTacToe {
 			player = (player == 'x') ? 'o' : 'x';
 
 		}
-
+		
+		System.out.println("\nDo you want to play again? (Y/N)");
+		s= sc.next();
+		
+		}while(s.equalsIgnoreCase("y"));
 		sc.close();
 	}
 
