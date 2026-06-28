@@ -6,33 +6,39 @@ public class DuplicateArray {
 
 	public static void main(String[] args) {
 
-		int a[]= {10,20,20,10,70};//5
-		int res[]= new int[a.length];
+		int empId[]= {10,20,20,10,30};//5
+		int resId[]= new int[empId.length];
 		int index=0;
 		
-		System.out.println(Arrays.toString(a));
+		System.out.println("Employee Id's with duplicate Id's:");
+		System.out.println(Arrays.toString(empId));
 		
-		for(int i=0;i<a.length;i++)//0 to 4
+		for(int i=0;i<empId.length;i++)//0 to 4
 		{
+			
 			boolean status=false;
+			
 			for(int j=0;j<index;j++)//0 =1 2 3 
 			{
-				if(a[i]==res[j])
+				
+				if(empId[i]==resId[j])
 				{
 					status=true;
 					break;
 				}
+				
 			}
 			
 			if(!status)
 			{
-				res[index]= a[i];
+				resId[index]= empId[i];
 				index++;
 			}
 		}
 		
-		System.out.println(Arrays.toString(res));
+		// Remaining positions are already 0 by default
+		System.out.println("Employee Id's without duplicate Id's:");
+		System.out.println(Arrays.toString(resId));
 		
 	}
-
 }
