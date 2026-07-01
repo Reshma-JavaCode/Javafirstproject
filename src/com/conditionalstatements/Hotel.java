@@ -1,15 +1,17 @@
+package com.conditionalstatements;
 import java.util.Scanner;
 
 public class Hotel {
 
 	public static void main(String[] args) {
 		
-		int item,q;
 		Scanner sc=new Scanner(System.in);
 		
+		int item,q;
 		String s="", res="";
 		String orderSummary="";
 		double price,total=0;
+		
 		do {
 		System.out.println("Enter item");
 		item=sc.nextInt();
