@@ -9,7 +9,7 @@ package com.assignments;
 ///nested objects a1,a2
 ///s1->a1
 ///s2->a2
-///s2 change not on s1 vice versa
+///s2 change not effects on s1 vice versa
 public class Student2 {
 	
 	String name;

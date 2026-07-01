@@ -8,7 +8,7 @@ class Test {
     }
 
     Test(Test m) {      // copy constructor
-        this.hero = m.hero;
+       hero = m.hero;
     }
 }
 public class Movie2 {
@@ -21,6 +21,8 @@ public class Movie2 {
 		
 		Test m1 = new Test("Mahesh");
         Test m2 = new Test(m1); //copy constructor
+        
+        System.out.println(m1.hero);
         System.out.println(m2.hero); //mahesh
 
         m2.hero = "Prabhas"; //not gng to affect other object 

@@ -9,7 +9,8 @@ package com.assignments;
 
 //Changes made in any object either s1 or s2 
 //gng to effect on both s1,s2 
-//since both sharing same address objec a1.
+//since both sharing same address object a1.
+
 public class Student {
 	
 		    String name;
@@ -33,7 +34,7 @@ public class Student {
 		        Address a1 = new Address("Hyderabad",506099);
 		        Student s1 = new Student("Reshma", a1);
 		        
-		            // Shallow Copy
+		        // Shallow Copy
 		        Student s2 = new Student(s1.name, s1.address);
 		       // Student s2 = new Student(s1);
 		        

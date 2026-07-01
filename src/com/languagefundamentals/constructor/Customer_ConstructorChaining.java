@@ -14,7 +14,7 @@ public class Customer_ConstructorChaining {
 
 	//2-parameter constructor
 	public Customer_ConstructorChaining(int cid, int age) {
-		this(100, "Soni", 9999999999L); // calling 3-para constrctr
+		this(cid, "Soni", 9999999999L); // calling 3-para constrctr
 		System.out.println("2 parametr constrctr");
 		// removing duplicate code this.cid,this.age
 //		this.cid = cid;
@@ -22,7 +22,7 @@ public class Customer_ConstructorChaining {
 	}
 
 	public Customer_ConstructorChaining(int cid, String c_name, long phone) {
-		this(200, 20, "Fouziya", 88888888L);// calling 4 para constructor
+		this(cid, 20, "Fouziya", phone);// calling 4 para constructor
 		System.out.println("3-parametr constrctr");
 
 		// avoiding repeating code

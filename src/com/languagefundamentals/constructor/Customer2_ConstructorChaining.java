@@ -25,6 +25,7 @@ public class Customer2_ConstructorChaining {
 
 			}
 			
+			//main method
 			public static void main(String[] args) {
 				Customer2_ConstructorChaining c3=new Customer2_ConstructorChaining(102, "Pariha", 989898989L);
 				c3.show();
