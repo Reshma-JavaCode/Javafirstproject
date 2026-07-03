@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class TicTacToe {
 
+	//board/grid representation
 	public static void printBoard(char[][] board) {
 		
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
+				
 				System.out.print(" " + board[i][j] + " ");
 				
 				if (j < 2) {
@@ -24,6 +26,7 @@ public class TicTacToe {
 		}
 	}
 
+	//Winner logic
 	public static boolean checkWinner(char[][] board, char player) {
 
 		// Horizontal checking
@@ -48,6 +51,7 @@ public class TicTacToe {
 			return true;
 		}
 
+		//anti-diagonal
 		if (board[0][2] == player && board[1][1] == player && board[2][0] == player) {
 
 			return true;
@@ -56,6 +60,7 @@ public class TicTacToe {
 		return false;
 	}
 
+	//Is Board full
 	public static boolean isBoardFull(char[][] board) {
 
 		for (int i = 0; i < 3; i++) {
@@ -71,12 +76,14 @@ public class TicTacToe {
 		return true;
 	}
 
+	//Main method
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 		String s=" ";
 
 		do {
+			
 		char[][] board = new char[3][3];
 		char player = 'x';
 
@@ -86,7 +93,7 @@ public class TicTacToe {
 			}
 		}
 		
-		//to display grid
+		//To Display grid/board
 		printBoard(board);
 
 		while (true) {
