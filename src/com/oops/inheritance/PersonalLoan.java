@@ -71,19 +71,54 @@ public class PersonalLoan {
 		return isValid;
 	}
 	
+	
+	public String getCustomerAdrs()
+	{
+		System.out.println("enter Plot number: ");
+		String plot= sc.next();
+		System.out.println("enter your Street: ");
+		sc.nextLine();
+		String st=sc.nextLine();
+		System.out.println("Enter your City name: ");
+		String city= sc.next();
+		System.out.println("enter District: ");
+		String district= sc.next();
+		System.out.println("Enter State: ");
+		String state= sc.next();
+		System.out.println("Enter Country: ");
+		String country= sc.next();
+		System.out.println("Enter your Pincode: ");
+		String pincode= sc.next();
+		boolean pin= pincode.matches("[0-9]{6}");
+		String res=" ";
+		if(pin)
+		{
+		res="plot NO: "+plot+" Street: "+st+" City: "+city
+				+"District: "+district+" State: "+state+" Country: "+country+" Pincode: "+pincode;
+		}else
+		{
+			System.out.println("Invalid pincode number");
+		}
+		
+		return res;
+	}
+	
 	public static void main(String[] args) {
 		
 		System.out.println("********Welcome to RMR Bank*******");
 		PersonalLoan l=new PersonalLoan();
 		
-		int age=l.getCustomerAge();
-		double income=l.getCustomerSal();
-		int cibilScore=l.getCibilScore();
 		boolean isPhoneValid= l.isValidPhoneNum();
 		boolean isAadharValid= l.isValidAadhaar();
 		boolean isPanValid= l.isValidPan();
 		
-		if((age>20 && age<=60) && (income>=50000) && (cibilScore>300 && cibilScore<=900) && (isPhoneValid) && (isAadharValid) && (isPanValid) )
+			
+		if((isPhoneValid) && (isAadharValid) && (isPanValid))
+		{
+			int age=l.getCustomerAge();
+			double income=l.getCustomerSal();
+			int cibilScore=l.getCibilScore();
+		if((age>20 && age<=60) && (income>=50000) && (cibilScore>300 && cibilScore<=900) )
 		{
 			System.out.println("Congratulations, You are Eligible for loan");
 			
@@ -91,25 +126,42 @@ public class PersonalLoan {
 			
 			if(cibilScore<600)//300-600
 			{
-				System.out.println("Rate Of Interest is: "+(interest+3.5));
+				interest= interest + 3.5;
+				//System.out.println("Rate Of Interest is: "+(interest+3.5));
 			}
 			else if(cibilScore<700)//600 -700
 			{
-				System.out.println("Rate Of Interest is: "+(interest+2.5));
+				interest= interest + 2.5;
+				//System.out.println("Rate Of Interest is: "+(interest+2.5));
 			}
 			else if(cibilScore<750)//700-750
 			{
-				System.out.println("Rate Of Interest is: "+(interest+1.5));
+				interest= interest + 1.5;
+				//System.out.println("Rate Of Interest is: "+(interest+1.5));
 			}
 			else//750-900
 				{
-					System.out.println("Rate Of Interest is: "+(interest-1.0));
+				  	interest= interest - 1.0;
+					//System.out.println("Rate Of Interest is: "+(interest-1.0));
 				}
+			System.out.println("Rate Of Interest is: "+interest);
+			System.out.println("Please Enter your Adress: ");
+			String Address= l.getCustomerAdrs();
+			System.out.println("Your Adress Info: ");
+			System.out.println(Address);
+			
 		}
 		
 		else
 		{
 			System.out.println("Sorry, You are not eligible for the loan!!");
+		}
+		
+		}
+		
+		else
+		{
+			System.out.println("Error occured in your personal information!!!");
 		}
 		
 	}
