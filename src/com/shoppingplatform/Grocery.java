@@ -1,14 +1,23 @@
 package com.shoppingplatform;
 
-public class Grocery {
+public class Grocery extends Product {
 
-	
-	String expiriDate;
+	String expiryDate;
 	double weight;
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+	public Grocery(int productId, String productName, double productPrice, String expiryDate, double weight) {
+		super(productId, productName, productPrice);
+		this.expiryDate = expiryDate;
+		this.weight = weight;
+	}
+
+	@Override
+	public void displayProductDetails() {
+
+		super.displayProductDetails();
+
+		System.out.println("Expiry Date : " + expiryDate);
+		System.out.println("Weight : " + weight + " Kg");
 	}
 
 }
