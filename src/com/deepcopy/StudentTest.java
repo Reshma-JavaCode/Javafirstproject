@@ -31,7 +31,7 @@ class Student{
 	{
 		this.id=s.id;
 		this.name=s.name;
-		this.a=new Address(s.a);
+		this.a=new Address(s.a); //Deep copy
 	}
 }
 public class StudentTest {

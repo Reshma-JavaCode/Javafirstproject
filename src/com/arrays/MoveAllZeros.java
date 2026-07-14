@@ -14,6 +14,7 @@ public class MoveAllZeros {
 		System.out.println(Arrays.toString(a));
 		
 		int pos=0;
+		
 		for(int i=0;i<a.length;i++) {
 			if(a[i]!=0)
 			{
