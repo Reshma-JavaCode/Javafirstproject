@@ -17,6 +17,24 @@ public class Student1 extends Person1{
 		System.out.println("Student Roll Number: "+rollNo);
 	}
 	
+//	@Override
+//	double show()
+//	{
+//		return 10;
+//	}  CE: we can't override by different return type 
+	//return type must be same for primitive DT
+	
+	private void disp1()
+	{
+		System.out.println("private disp1 from child");
+	}
+	
+	
+	static void disp3()
+	{
+		System.out.println("Static method from Child");
+	}
+	
 	public static void main(String[] args) {
 
 		Student1 s=new Student1();
@@ -34,7 +52,14 @@ public class Student1 extends Person1{
 
         // Calling child class method
         s.displayStudentInfo();
-		
+        
+        s.disp1();
+		s.disp3();
+        
+        Person1 s2=new Student1();
+       // s2.disp1();//CE: since private can't access directly in other classes
+        s2.disp2();//we can access like this
+        s2.disp3();
 		
 	}
 
