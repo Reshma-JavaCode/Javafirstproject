@@ -1,16 +1,20 @@
 package com.abstraction;
 
 public class TestAnimal {
-
+	//final int age; CE
 	
 	public static void main(String[] args) {
 
+		TestAnimal t=new TestAnimal();
+		//t.age=10; CE
+		
 		Animal a;
 		
 		System.out.println("********Dog Info********");
 		a=new Dog();
 		a.sound();
 		a.eat();
+		a.breath();
 		
 		System.out.println("\n********Cat Info********");
 		a=new Cat();

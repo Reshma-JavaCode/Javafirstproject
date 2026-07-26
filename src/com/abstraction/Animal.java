@@ -20,6 +20,13 @@ public interface Animal {
 	
 	
 	//default from 1.8ver
+	//1Q) Is default an access modifier?
+	  //here, default is  a keyword used only in interfaces to define a method 
+		//with an implementation. 
+	  //The access modifier is still public.
+	
+	//2Q) Why can we omit public?
+		// Because every interface method is implicitly public. Therefore,
 	public default void breath()
 	{
 		//System.out.println("Common message....");

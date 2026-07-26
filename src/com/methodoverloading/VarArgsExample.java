@@ -23,6 +23,9 @@ public class VarArgsExample {
 		System.out.println(sum(10,20)); //30
 		System.out.println(sum(10,20,30));//60
 		
+		//CE: diff args type values we cant paas using varargs
+		//System.out.println(sum(10,20.3));
+		
 	}
 
 }
