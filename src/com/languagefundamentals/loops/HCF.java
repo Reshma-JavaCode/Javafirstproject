@@ -10,6 +10,7 @@ public class HCF {
 		int hcf=0;
 		//common factor not>12 in between 12&18
 		int min=Math.min(a, b); //12
+		
 		for(int i=1;i<=min;i++)
 		{
 			if((a%i==0)&&(b%i==0))

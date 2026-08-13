@@ -16,6 +16,10 @@ public class Test4 {
 		int res= (c>b)?c:b;
 		System.out.println((c>b)?c:b);
 		System.out.println(res);
+		
+		
+		String s="java program";
+		System.out.println(s.substring(0));
 	}
 
 }

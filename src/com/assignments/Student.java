@@ -45,7 +45,7 @@ public class Student {
 		        s2.display();
 
 		        // Change city using copied object
-		      //  s2.name="Soni";
+		        s2.name="Soni";
 		        s2.address.city = "Delhi";
 		        s2.address.pincode=506001;
 
