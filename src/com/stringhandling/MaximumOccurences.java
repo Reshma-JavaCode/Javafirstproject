@@ -34,7 +34,7 @@ public class MaximumOccurences {
 			}
 		}
 		
-		System.out.println("Maximum occured character is: "+maxChar);
+		System.out.println("Maximum occured character is: "+maxChar+" , "+max+" times");
 		for(int i=0;i<s.length();i++)//maxChar indeces
 		{
 			if(maxChar==s.charAt(i))

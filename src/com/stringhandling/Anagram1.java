@@ -3,6 +3,8 @@ package com.stringhandling;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//listen-> silent
+//race->care
 public class Anagram1 {
 
 	public static void main(String[] args) {

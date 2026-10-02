@@ -18,18 +18,18 @@ public class TwoArraysComparision {
         
 		for(int i=0;i<a.length;i++) {
 			
-            boolean alreadyPrinted = false;
+			boolean alreadyPrinted = false;
 
-         // Check if a[i] appeared earlier in a[]
-            for(int k = 0; k < i; k++) {
-                if(a[i]==a[k]) {
-                    alreadyPrinted = true;
-                    break;
-                }
-            }
+	         // Check if a[i] appeared earlier in a[]
+	            for(int k = 0; k < i; k++) {
+	                if(a[i]==a[k]) {
+	                    alreadyPrinted = true;
+	                    break;
+	                }
+	            }
 
-            if(alreadyPrinted)
-                continue;
+	            if(alreadyPrinted)
+	                continue;
 
              // Check if a[i] exists in b[]
 			for(int j=0;j<b.length;j++)

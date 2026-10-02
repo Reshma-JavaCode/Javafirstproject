@@ -1,7 +1,9 @@
 package com.languagefundamentals.loops;
 
 import java.util.Scanner;
-
+//0 1=n1,n2
+//0 1 1 
+//0 1 1 2
 public class FibanocciSeries {
 
 	static void fibSeries(int n)

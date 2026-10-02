@@ -21,8 +21,12 @@ public class DisplayDuplicateChars {
 				System.out.println(ch);//a
 				s2= s2+ch;
 			}
+			/*if(s2.indexOf(ch)==-1)
+			{
+				s2=s2+ch;
+			}*/
 		}
-		
+		System.out.println(s2);
 		sc.close();
 		
 	}

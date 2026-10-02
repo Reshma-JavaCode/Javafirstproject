@@ -31,7 +31,7 @@ public class SecongLargestNumberArray {
 				max2=max1;
 				max1 = num[i];
 			}
-			else if(num[i]>max2)
+			else if(num[i]>max2 && max1!=max2)
 			{
 				max2= num[i];
 			}

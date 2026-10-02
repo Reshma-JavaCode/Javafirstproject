@@ -8,11 +8,13 @@ public class LongestWord {
 
 		Scanner sc=new Scanner(System.in);
 		String s=sc.nextLine();
-		String[] w=s.split(" ");
+		//String[] w=s.split(" ");
+		String[] w=s.trim().split("\\s+");
 		String l="";
 		
 		for(int i=0;i<w.length;i++)
 		{
+			//w[i].length() → length of that particular String
 			if(w[i].length()>l.length())
 			{
 				l=w[i];

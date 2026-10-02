@@ -40,13 +40,13 @@ public class CountChars {
 				else
 					cCount++;
 			}
-			else if(c>= '0' && c<='9')
-			//else if(Character.isDigit(c))
+			//else if(c>= '0' && c<='9')
+			else if(Character.isDigit(c))
 			{
 				dCount++;
 			}
-			else if(c==' ')
-			//else if(Character.isSpaceChar(c))
+			//else if(c==' ')
+			else if(Character.isSpaceChar(c))
 			{
 				spCount++;
 			}
