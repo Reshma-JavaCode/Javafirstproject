@@ -11,6 +11,8 @@ public class TestDemo3 extends Thread{
 		//Give me the thread that is executing the current piece of code.
 
 		t.start();
+		//t.start();//RE: java.lang.IllegalThreadStateException
+
 		
 		//we can achieve multithreading using multiple objects for one class also 
 		Thread t2=new TestDemo3();
@@ -28,5 +30,6 @@ public class TestDemo3 extends Thread{
 		{
 			System.out.print(i+"  ");
 		}
+		System.out.println();
 	}
 }

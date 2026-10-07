@@ -2,11 +2,13 @@ package com.multithreading;
 
 public class TestDemo5 extends Thread{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		System.out.println("Main method started");		
 		Thread t=new TestDemo5();
 		t.start();
+		//join() causes the calling thread(main) to wait until the target thread(run) terminates.
+		//t.join();
 		System.out.println("Main method ended");
 		
 	}

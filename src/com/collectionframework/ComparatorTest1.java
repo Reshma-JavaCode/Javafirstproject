@@ -56,6 +56,7 @@ public class ComparatorTest1 {
 			
 		//};
 		
+		//Lambda expressions
 		Comparator<Mobile> c=(o1,o2)->{
 			return o1.brand.compareTo(o2.brand);
 			

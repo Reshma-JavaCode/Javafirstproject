@@ -20,6 +20,9 @@ public class Test1 implements Runnable {
 		System.out.println("Main method started");
 				
 		Runnable r=new Test1();
+		/*Test1 t1=new Test1();
+		Thread t=new Thread(t1);
+		t.start();*/
 		r.run();
 		for(int i=1;i<6;i++)
 		{

@@ -1,7 +1,7 @@
 package com.collectionframework;
 
 import java.util.HashSet;
-
+//12 elements
 public class HashSetTest2 {
 
 	public static void main(String[] args) {

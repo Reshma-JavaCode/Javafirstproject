@@ -20,6 +20,10 @@ public class TestStreamApiDemo3 {
 		
 		System.out.println(l3);//[210, 220, 330, 440, 450, 1000]
 		
+		//Flatmap
+		List<List<Integer>> l4=Arrays.asList(Arrays.asList(10,20),Arrays.asList(30,40));
+		List<Integer> l5=l4.stream().flatMap(List::stream).collect(Collectors.toList());
+		System.out.println(l5);
 	}
 
 }
