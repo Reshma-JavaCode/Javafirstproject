@@ -4,6 +4,7 @@ package com.multithreading;
 class BookMyShow
 {
 	int total_tickets=10;
+	
 	synchronized void bookMyShow(String name,int tickets) throws InterruptedException {
 		
 		if(tickets<=total_tickets)
