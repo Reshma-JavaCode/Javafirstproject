@@ -42,6 +42,7 @@ public class HomeLoan extends LoanImp {
 				System.out.println("Monthly Salary : " + customer.getSalary());
 				System.out.println("Age: " + customer.getAge());
 				System.out.println("CIBIL Score: " + customer.getCibilScore());
+				
 
 				System.out.println("\n----------- ADDRESS -----------");
 
