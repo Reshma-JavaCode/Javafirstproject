@@ -6,7 +6,7 @@ import java.util.Scanner;
 //listen-> silent
 //race->care
 public class Anagram1 {
-
+//dad-add
 	public static void main(String[] args) {
 
 		Scanner sc=new Scanner(System.in);

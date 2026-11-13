@@ -13,6 +13,7 @@ public class maxOccurenceCharacters {
 		String s="aabbbcccac";
 		
 		char[] c=s.toCharArray();
+		
 		for(char i:c)
 		{
 			if(m.containsKey(i))
@@ -28,13 +29,13 @@ public class maxOccurenceCharacters {
 		int maxVal=0;
 		char maxChar=c[0];
 		
-		Set<Entry<Character,Integer>> es= m.entrySet();
+		//Set<Entry<Character,Integer>> es= m.entrySet();
 		for(Entry<Character,Integer> i:m.entrySet())
 		{
-			if(i.getValue()>maxVal)
+			if(i.getValue()>maxVal)//a=3 3>0, c=4, 4>3
 			{
-				maxVal=i.getValue();
-				maxChar=i.getKey();
+				maxVal=i.getValue();//3, 4
+				maxChar=i.getKey();//a, c
 			}
 		}
 		
