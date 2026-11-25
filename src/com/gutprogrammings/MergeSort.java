@@ -52,7 +52,12 @@ public class MergeSort {
 
 		int[] a= {38,27,43,3,9,82,10};
 		
+		System.out.println("Before Sorting, Array values are:\n");
+		System.out.println(Arrays.toString(a));
+		
 		divide(a,0,a.length-1);
+		
+		System.out.println("\n\nAfter Merge Sort, Array values are:\n");
 		
 		System.out.println(Arrays.toString(a));
 	}
